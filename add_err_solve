@@ -1,0 +1,45 @@
+Git] LF, CRLF(warning: LF will be replaced by CRLF in README.txt.)
+
+$ git add README.txt
+
+
+warning: LF will be replaced by CRLF in README.txt.
+
+
+The file will have its original line endings in your working directory. 
+
+
+저 'LF'와 'CRLF'가 문제가 될 수 있다.
+
+
+운영체제에 따라, 개행 문자를 나타내는 문자가 다른다.
+
+
+유닉스 / 리눅스 계열은 LF로 개행 문자를 사용하고 있고,
+
+
+윈도우는 CRLF 형식으로 개행 문자를 사용하고 있다.
+
+
+나는 윈도우에서 찌그렸더니, 발생했던거라지~ 후후
+
+
+나만 쓰면 상관없겠지만 누구는 윈도우에서, 누구는 리눅스에서 쓴다하면 
+
+
+요 문제가 똥으로 다가올 수 있다.
+
+
+이럴 땐 core.autocrlf 값을 true로 설정해주면 올릴 때 알아서 처리해준다.
+
+
+$ git config core.autocrlf true
+
+
+그러면 깔끔하게 저장소로 올리기 위한 add가 된다는 말씀.
+
+
+자세한 정보는 요기에서 보시길 바랍니다~
+
+
+출처: https://blog.shovelman.dev/923 [한글로는 삽잡이, 영어로는 shovelman]
